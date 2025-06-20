@@ -7,14 +7,16 @@ The project was developed as part of a Discrete Mathematics coursework at Instit
 ---
 
 ## Folder Structure
+```plaintext
 otp-verification-crt/
-├── src/ # Source code (.c) implementing the OTP system
-│ └── main.c
-├── data/ # Sample input files for test cases
-│ └── example_input.txt
-├── doc/ # Final paper/documentation
-│ └── 13524071-Kalyca-Nathania-Benedicta-Manullang-Makalah-Matematika-Diskrit.pdf
-└── README.md # This file
+├── src/                   # Source code (.c) implementing the OTP system
+│   └── main.c
+├── data/                  # Sample input files for test cases
+│   └── example_input.txt
+├── doc/                   # Final paper/documentation
+│   └── 13524071-Kalyca-Nathania-Benedicta-Manullang-Makalah-Matematika-Diskrit.pdf
+└── README.md              # This file
+```
 
 ---
 
@@ -65,6 +67,7 @@ The system has been tested across a variety of scenarios including:
 - Rate limiting after multiple failures
 - Large timestamp and user ID combinations
 - Validity drift between similar timestamps
+
 Full documentation is available in the doc/ folder.
 
 ## Paper
