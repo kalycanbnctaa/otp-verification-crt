@@ -9,13 +9,14 @@ The project was developed as part of a Discrete Mathematics coursework at Instit
 ## Folder Structure
 ```plaintext
 otp-verification-crt/
-├── src/                   # Source code (.c) implementing the OTP system
-│   └── main.c
-├── data/                  # Sample input files for test cases
-│   └── example_input.txt
-├── doc/                   # Final paper/documentation
-│   └── 13524071-Kalyca-Nathania-Benedicta-Manullang-Makalah-Matematika-Diskrit.pdf
-└── README.md              # This file
+├── src/ # Source code (.c) implementing the OTP system
+│ ├── main.c # Main program for OTP generation & verification
+│ └── benchmark.c # To measure performance
+├── data/ # Sample input files for test cases
+│ └── example_input.txt
+├── doc/ # Final paper/documentation
+│ └── 13524071-Kalyca-Nathania-Benedicta-Manullang-Makalah-Matematika-Diskrit.pdf
+└── README.md # This file
 ```
 
 ---
@@ -52,13 +53,26 @@ You will be prompted to enter:
 3. Number of moduli (n)
 4. n pairwise coprime integers as moduli
 
-### Sample Input
+## Sample Input
 Example test cases are available in data/example_input.txt.
 You can feed these values manually when running the program.
 Example:
 ```bash
 123456789 42 3 5 7 11
 ```
+## Benchmark
+To measure performance of the OTP generation (e.g., secure_hash()):
+
+### Compile Benchmark
+```bash
+gcc benchmark.c -o benchmark
+```
+### Run Benchmark
+```bash
+./benchmark
+```
+This will measure average execution time over 100,000 iterations.
+You can use this data to compare performance with industry-standard OTP methods.
 
 ## Test Scenarios
 The system has been tested across a variety of scenarios including:
@@ -75,7 +89,8 @@ Read the full academic paper describing the theory, implementation, and results:
 📎 doc/13524071-Kalyca-Nathania-Benedicta-Manullang-Makalah-Matematika-Diskrit.pdf
 
 ## Acknowledgement
-This project was developed as part of the IF1220 Discrete Mathematics course at ITB, under the supervision of Dr. Rinaldi Munir. Special thanks to everyone who supported this work.
+This project was developed as part of the IF1220 Discrete Mathematics course at ITB, under the supervision of Dr. Rinaldi Munir. 
+Special thanks to everyone who supported this work.
 
 
 
