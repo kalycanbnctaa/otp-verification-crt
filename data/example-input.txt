@@ -1,0 +1,26 @@
+# Example Input for OTP Verification Program
+
+# Test Case 1: Small Moduli (Keyspace too small)
+123456789 42 3 5 7 11
+
+# Test Case 2: Valid OTP with large moduli
+123456789 42 2 10007 10009
+
+# Test Case 3: 3 failures to trigger rate limiting
+1651234567 99 3 211 227 2111
+
+# Test Case 4: Invalid - Non-coprime moduli
+135792468 88 3 220 268 4600
+
+# Test Case 5: Invalid modulus (<= 1)
+135792468 88 3 1 17 19
+
+# Test Case 6: More than 3 moduli (stress test)
+1659876543 33 5 101 103 107 109 113
+
+# Test Case 7: Same ID, different timestamp
+123456789 42 3 10007 10009 10037
+123456790 42 3 10007 10009 10037
+
+# Test Case 8: Large User ID
+1651239876 987654321 3 197 199 211
