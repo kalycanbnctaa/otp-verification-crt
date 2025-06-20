@@ -39,10 +39,11 @@ otp-verification-crt/
 ```bash
 cd src
 gcc main.c -o otp_verifier
-
+```
 ### Run
+```bash
 ./otp_verifier
-
+```
 You will be prompted to enter:
 1. Current timestamp (integer)
 2. User ID (integer)
@@ -53,11 +54,11 @@ You will be prompted to enter:
 Example test cases are available in data/example_input.txt.
 You can feed these values manually when running the program.
 Example:
-Copy
-Edit
+```bash
 123456789 42 3 5 7 11
+```
 
-### Test Scenarios
+## Test Scenarios
 The system has been tested across a variety of scenarios including:
 - Small moduli with insufficient keyspace
 - Coprime moduli vs. non-coprime detection
@@ -66,11 +67,11 @@ The system has been tested across a variety of scenarios including:
 - Validity drift between similar timestamps
 Full documentation is available in the doc/ folder.
 
-### Paper
+## Paper
 Read the full academic paper describing the theory, implementation, and results:
 📎 doc/13524071-Kalyca-Nathania-Benedicta-Manullang-Makalah-Matematika-Diskrit.pdf
 
-### Acknowledgement
+## Acknowledgement
 This project was developed as part of the IF1220 Discrete Mathematics course at ITB, under the supervision of Dr. Rinaldi Munir. Special thanks to everyone who supported this work.
 
 
